@@ -52,13 +52,23 @@ class Program
         puts "You choose  #{menu[menu_item-1]}"
         order.push(menu[menu_item-1])
     end
+    def Store_goal
+        goal = Goal.new()
+        puts "Let's create your body profile!"
+        puts
+        puts "Please write your weight"
+        goal_user = gets.chomp to_i 
+        puts "Please write your age."
+        goal_user = gets.chomp to_i 
+    end
 end      
     
 main = Program.new()
 main.Welcome
 main.LoadUserData
 main.Menu
-main.GetUserMenu
-#     #main.calculateSoemthing
-#     #main.printReceipt
-# main.quit 
+main.Store_goal
+#main.GetUserMenu
+#main.calculateSoemthing
+#main.printReceipt
+#main.quit 

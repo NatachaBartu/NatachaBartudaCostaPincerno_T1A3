@@ -11,7 +11,7 @@ describe User do
 
     it "gender should be Male, Female Or Non-Binary" do
         user = User.new("Natacha")
-        
+    
         expect(user.name).to eq("Natacha")
         expect(user.gender("XXXX")).to eq("")
     end
