@@ -1,4 +1,4 @@
-#require_relative '../user_info.rb'
+require_relative 'user.rb'
 # require_relative '../calculate_calories.rb'
 # require_relative '../quit_program.rb'
 
@@ -22,21 +22,24 @@ class Program
 
     def LoadUserData
         puts "What is your name? "
-        @user_name = gets.chomp
+        user_name = gets.chomp
+        @user = User.new(user_name)
         puts "what you gender? (Male, Female, Non-Binary)"
-        @user_gender = gets.chomp
-        while (@user_gender != "Male" && @user_gender != "Female" && @user_gender != "Non-Binary")
+        user_gender = gets.chomp
+        while (@user.gender(user_gender) == "")
             puts "Ops! Wrong answer try again. (Male, Female, Non-Binary)"
-            @user_gender = gets.chomp
+            user_gender = gets.chomp
         end
-        puts "What is you goal?"
-        puts
     end
 
     def Menu
-        menu = ["Get fit", "Lose Weight"]
+        
+        puts "What is you goal?"
+        puts
+
+        menu = Menu.new()
         puts "Choose from menu, please write a number"
-        menu.each_with_index do |item, index|
+        menu.items.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
         end
         user_info = []
@@ -49,12 +52,6 @@ class Program
         puts "You choose  #{menu[menu_item-1]}"
         order.push(menu[menu_item-1])
     end
-    
-    # def GetUserMenu
-
-
-
-    # end
 end      
     
 main = Program.new()
