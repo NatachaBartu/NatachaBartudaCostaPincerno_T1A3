@@ -1,4 +1,7 @@
 require_relative 'user.rb'
+require_relative 'menu.rb'
+require_relative 'goal.rb'
+
 # require_relative '../calculate_calories.rb'
 # require_relative '../quit_program.rb'
 
@@ -43,24 +46,29 @@ class Program
             puts "#{index + 1} - #{item}"
         end
         user_info = []
-        menu_item_input = gets.chomp
-        while (menu_item_input != "1" && @menu_item_input != "2")
+        menu_item_input = gets.chomp.to_i
+        while (menu.select(menu_item_input) == "")
             puts "Ops! Wrong answer try again."
-            menu_item_input = gets.chomp
+            menu_item_input = gets.chomp.to_i
         end
-        menu_item = menu_item_input.to_i
-        puts "You choose  #{menu[menu_item-1]}"
-        order.push(menu[menu_item-1])
+        puts "You choose #{menu.selected}"
+        # order.push(menu[menu_item-1])
     end
+
     def Store_goal
-        goal = Goal.new()
+        goal = Goal.new(@user)
         puts "Let's create your body profile!"
         puts
         puts "Please write your weight"
-        goal_user = gets.chomp to_i 
+        w = gets.chomp.to_i 
         puts "Please write your age."
-        goal_user = gets.chomp to_i 
+        a = gets.chomp.to_i 
     end
+
+    def calculation
+    
+    end
+
 end      
     
 main = Program.new()

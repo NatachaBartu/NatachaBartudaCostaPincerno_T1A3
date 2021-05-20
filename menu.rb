@@ -1,4 +1,4 @@
-class Menu 
+class Menu
     def items
         ["Get fit", "Lose Weight"]
     end
@@ -7,6 +7,12 @@ class Menu
         if (item-1 >= items.length) 
             return ""
         end
-        return items[item-1]
+        
+        @selected = items[item-1]
+        return @selected
+    end
+
+    def selected
+        @selected
     end
 end
