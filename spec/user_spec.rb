@@ -5,14 +5,14 @@ describe User do
         user = User.new("Natacha")
         
         expect(user.name).to eq("Natacha")
-        expect(user.gender("Female")).to eq("Female")
+        expect(user.setGender("Female")).to eq("Female")
     end
 
 
-    it "gender should be Male, Female Or Non-Binary" do
+    it "gender should be Male or Female" do
         user = User.new("Natacha")
     
         expect(user.name).to eq("Natacha")
-        expect(user.gender("XXXX")).to eq("")
+        expect(user.setGender("XXXX")).to eq("")
     end
 end

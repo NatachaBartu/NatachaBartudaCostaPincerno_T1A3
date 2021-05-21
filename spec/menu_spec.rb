@@ -18,4 +18,19 @@ describe Menu do
 
         expect(menu.select(4)).to eq('')
     end
+    it "write a number to select option on menu" do
+        menu = Menu.new()
+
+        expect(menu.options).to eq(["yes, please!", "no, thank you!"])
+    end
+    it "write a number to select option on menu" do
+        menu = Menu.new()
+
+        expect(menu.get_menu).to eq(["non_vegan_menu", "vegan_menu"])
+    end
+    it "write a number to select option on menu" do
+        menu = Menu.new()
+
+        expect(menu.get_fit).to eq(["yes, to print get fit tips!", "no, thank you!"])
+    end
 end
