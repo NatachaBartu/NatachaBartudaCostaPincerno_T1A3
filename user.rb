@@ -8,7 +8,7 @@ class User
     end
 
     def gender(value)
-        if (value != "Female" && value != "Male" && value != "Non-Binary")
+        if (value != "Female" && value != "Male")
             @gender = ""
         else
             @gender = value

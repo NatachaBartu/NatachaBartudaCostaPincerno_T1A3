@@ -1,6 +1,6 @@
 require_relative 'user.rb'
 require_relative 'menu.rb'
-require_relative 'goal.rb'
+require_relative 'calories_calculator.rb'
 
 # require_relative '../calculate_calories.rb'
 # require_relative '../quit_program.rb'
@@ -27,10 +27,10 @@ class Program
         puts "What is your name? "
         user_name = gets.chomp
         @user = User.new(user_name)
-        puts "What you gender? (Male, Female, Non-Binary)"
+        puts "What you gender? (Male, Female)"
         user_gender = gets.chomp
         while (@user.gender(user_gender) == "")
-            puts "Ops! Wrong answer try again. (Male, Female, Non-Binary)"
+            puts "Ops! Wrong answer try again. (Male, Female)"
             user_gender = gets.chomp
         end
     end

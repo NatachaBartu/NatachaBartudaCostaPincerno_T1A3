@@ -6,19 +6,25 @@
 # 3. and input his/her "score" using colorize or gems
 #*************************************************************************************************************
 
-# ** 18 e 30 year**
-#**Women: (0,062 x peso em quilos + 2,036) x 239 = calories result per day**
+# How to calculate your daily calorie needs
+# Step 1: Find your body weight in kilograms.
 
-#**Homens: (0,063 x peso em quilos + 2,896) x 239 = calories result per day**
+# Step 2: Multiply your weight in kilograms by 0.9 if you are a woman or 1.0 if you are a man.
 
-# ** 31 e 40 years**
+# Step 3: Multiply by 24
 
-#**Womens: (0,034 x peso em quilos + 3,538) x 239 = calories result per day**
-
-#**Homens: (0,048 x peso em quilos + 3, 653) x 239 = calories result per day**
+#This number is called your Basal Metabolic Rate (BMR).
+#Example using my stats: 61 kg (134.5 lbs.) x 0.9 (female) x 24 x 0.95 (20% body fat) = 1252
 
 class CaloriesCalculator
-
-    def 
-
+    def initialize(user)
+        @user = user
     end
+        
+    def calculateCalories (weight)
+        if @user.gender == "Female"
+           calories = weight * 0,90 * 24 * 1.0
+        else  calories = weight * 1.0 * 24 * 0.9
+        end
+    end
+end
