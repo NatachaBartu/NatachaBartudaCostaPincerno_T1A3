@@ -29,7 +29,7 @@ class Program
         @user = User.new(user_name)
         puts "What you gender? (Male, Female)"
         user_gender = gets.chomp
-        while (@user.gender(user_gender) == "")
+        while (@user.setGender(user_gender) == "")
             puts "Ops! Wrong answer try again. (Male, Female)"
             user_gender = gets.chomp
         end
@@ -56,18 +56,22 @@ class Program
     end
 
     def Store_goal
-        goal = Goal.new(@user)
         puts "Let's create your body profile!"
         puts
-        puts "Please write your weight"
-        weight = gets.chomp.to_i 
-        puts "Please write your age."
-        age = gets.chomp.to_i
+        puts "Please write your goal weight"
+        @weight = gets.chomp.to_i 
         puts "Thank you for the information!" 
     end
 
-    def calculation
-    
+    def Calculation
+        calculator = CaloriesCalculator.new(@user)
+        calories = calculator.calculateCalories(@weight)
+        puts "To lose weight, your daily calorie needs are #{calories}!"
+        puts "Would like some menu ideas? Please type number"
+        menu = Menu.new()
+        puts "Choose from menu, please write a number"
+        menu.items.each_with_index do |item, index|
+            puts "#{index + 1} - #{item}"
     end
 
 end      
@@ -77,6 +81,7 @@ main.Welcome
 main.LoadUserData
 main.Menu
 main.Store_goal
+main.Calculation
 #main.GetUserMenu
 #main.calculateSoemthing
 #main.printReceipt

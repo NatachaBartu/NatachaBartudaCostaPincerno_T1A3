@@ -7,7 +7,7 @@ class User
         @name
     end
 
-    def gender(value)
+    def setGender(value)
         if (value != "Female" && value != "Male")
             @gender = ""
         else

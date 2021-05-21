@@ -1,4 +1,4 @@
-
+require_relative 'user.rb'
 # **calculate_calories.rb**
 
 # 1. calculate accordingly with the user information the calories
@@ -23,8 +23,10 @@ class CaloriesCalculator
         
     def calculateCalories (weight)
         if @user.gender == "Female"
-           calories = weight * 0,90 * 24 * 1.0
-        else  calories = weight * 1.0 * 24 * 0.9
+           calories = weight * 0.90 * 24 * 1.0
+        else  
+            calories = weight * 1.0 * 24 * 0.9
         end
+        return calories.round
     end
 end
