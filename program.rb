@@ -77,6 +77,11 @@ class Program
             puts "#{index + 1} - #{item}"
         end
     end
+    def File
+        File.open("menu.txt", "r") do |file|
+            puts file.read()
+    end
+    end
 end      
     
 main = Program.new()
@@ -85,5 +90,6 @@ main.LoadUserData
 main.Menu
 main.Store_goal
 main.Calculation
+main.File
 
 #main.quit 
