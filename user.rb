@@ -15,4 +15,8 @@ class User
         end
         return @gender
     end
+
+    def gender 
+        @gender
+    end
 end

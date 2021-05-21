@@ -27,7 +27,7 @@ class Program
         puts "What is your name? "
         user_name = gets.chomp
         @user = User.new(user_name)
-        puts "what you gender? (Male, Female, Non-Binary)"
+        puts "What you gender? (Male, Female, Non-Binary)"
         user_gender = gets.chomp
         while (@user.gender(user_gender) == "")
             puts "Ops! Wrong answer try again. (Male, Female, Non-Binary)"
@@ -60,9 +60,10 @@ class Program
         puts "Let's create your body profile!"
         puts
         puts "Please write your weight"
-        w = gets.chomp.to_i 
+        weight = gets.chomp.to_i 
         puts "Please write your age."
-        a = gets.chomp.to_i 
+        age = gets.chomp.to_i
+        puts "Thank you for the information!" 
     end
 
     def calculation
