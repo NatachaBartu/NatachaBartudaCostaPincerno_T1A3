@@ -18,4 +18,9 @@ describe Menu do
 
         expect(menu.select(4)).to eq('')
     end
+    it "write a number to select option on menu" do
+        menu = Menu.new()
+
+        expect(menu.options).to eq(["yes, please!", "no, thank you!"])
+    end
 end

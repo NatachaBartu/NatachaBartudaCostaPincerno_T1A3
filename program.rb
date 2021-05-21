@@ -67,13 +67,16 @@ class Program
         calculator = CaloriesCalculator.new(@user)
         calories = calculator.calculateCalories(@weight)
         puts "To lose weight, your daily calorie needs are #{calories}!"
+        puts
         puts "Would like some menu ideas? Please type number"
+        puts
         menu = Menu.new()
         puts "Choose from menu, please write a number"
-        menu.items.each_with_index do |item, index|
+        puts
+        menu.options.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
+        end
     end
-
 end      
     
 main = Program.new()
@@ -82,7 +85,5 @@ main.LoadUserData
 main.Menu
 main.Store_goal
 main.Calculation
-#main.GetUserMenu
-#main.calculateSoemthing
-#main.printReceipt
+
 #main.quit 

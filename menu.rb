@@ -15,4 +15,7 @@ class Menu
     def selected
         @selected
     end
+    def options
+        ["yes, please!", "no, thank you!"]
+    end
 end
