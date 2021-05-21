@@ -2,6 +2,7 @@ require_relative 'user.rb'
 require_relative 'menu.rb'
 require_relative 'calories_calculator.rb'
 
+
 # require_relative '../calculate_calories.rb'
 # require_relative '../quit_program.rb'
 
@@ -59,28 +60,42 @@ class Program
         puts "Let's create your body profile!"
         puts
         puts "Please write your goal weight"
-        @weight = gets.chomp.to_i 
+        @weight = gets.chomp.to_i
+        puts 
         puts "Thank you for the information!" 
+        puts
     end
 
     def Calculation
         calculator = CaloriesCalculator.new(@user)
         calories = calculator.calculateCalories(@weight)
-        puts "To lose weight, your daily calorie needs are #{calories}!"
+        puts "To lose weight, your daily calories needs are #{calories}!"
         puts
-        puts "Would like some menu ideas? Please type number"
+        puts "Would like some menu ideas?"
         puts
         menu = Menu.new()
-        puts "Choose from menu, please write a number"
+        puts "Choose from menu, please write a number (1 or 2)"
         puts
         menu.options.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
         end
     end
-    def File
-        File.open("menu.txt", "r") do |file|
-            puts file.read()
+
+    def Choose_Menu
+        menu = Menu.new()
+        puts "Please, choose one menu (non-vegan or vegan)"
+        puts
+        menu.get_menu.each_with_index do |item, index|
+            puts "#{index + 1} - #{item}"
+        end
     end
+
+    def Get_fit
+        puts "Would like some tips suggestion?"
+        puts
+        menu.get_fit.each_with_index do |item, index|
+            puts "#{index + 1} - #{item}"
+        end
     end
 end      
     
@@ -90,6 +105,7 @@ main.LoadUserData
 main.Menu
 main.Store_goal
 main.Calculation
-main.File
+main.Choose_Menu
+main.Get_fit
 
 #main.quit 
