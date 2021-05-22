@@ -3,10 +3,6 @@ require_relative 'menu.rb'
 require_relative 'calories_calculator.rb'
 require 'colorize'
 
-# require_relative '../calculate_calories.rb'
-# require_relative '../quit_program.rb'
-
-#***********************************************************************
 # **user_info**
 
 # 1. welcome message
