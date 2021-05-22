@@ -61,6 +61,15 @@ Instances variables was the key to build the app, but was essencial to organise 
 
 The application is very simple to use as you open the app the user going to have a question already and is simple to follow along and answer the questions and choose the desire path.
 
-As you can see on the picture bellow I've written a pseudocode and wireframe to simulate how every feature it will corresponde on the code.
+On the pictures bellow I've written classes, data structure pseudocode, wireframe to help me to build and understand and organise myself and how every feature it will corresponde on the code.
 
-## Pseudocode![pseudocode]()
+## Classes
+![classes](.vscode/screenshots_app/screenshot process/notion/Classes-ruby_app.pdf)
+## Data Structure
+![data_structure](.vscode/screenshots_app/screenshot process/notion/Data_Structure-ruby_app.pdf) 
+## Pseudocode 
+![pseudocode](.vscode/screenshots_app/screenshot process/notion/Pseudocode.pdf)
+
+## Wireframe
+![wireframe](.vscode/screenshots_app/screenshot process/notion/wireframe.pdf)
+
