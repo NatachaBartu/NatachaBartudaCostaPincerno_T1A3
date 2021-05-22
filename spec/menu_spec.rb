@@ -10,13 +10,13 @@ describe Menu do
     it "option 1 should be 'Get Fit'" do
         menu = Menu.new()
 
-        expect(menu.select(1)).to eq('Get fit')
+        expect(menu.select("1")).to eq('Get fit')
     end
 
     it "option 4 should be empty" do
         menu = Menu.new()
 
-        expect(menu.select(4)).to eq('')
+        expect(menu.select("4")).to eq('')
     end
     it "write a number to select option on menu" do
         menu = Menu.new()
@@ -31,6 +31,6 @@ describe Menu do
     it "write a number to select option on menu" do
         menu = Menu.new()
 
-        expect(menu.get_fit).to eq(["yes, to print get fit tips!", "no, thank you!"])
+        expect(menu.get_fit).to eq(["yes, to print healthy tips!", "no, thank you!"])
     end
 end

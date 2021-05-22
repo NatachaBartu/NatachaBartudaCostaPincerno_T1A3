@@ -19,12 +19,16 @@ require_relative 'calories_calculator.rb'
 
 class Program
 
-    def Welcome
+    def initialize()
+        @menu = Menu.new
+    end
+
+    def welcome
         puts "Welcome to Get track on Diet!"
         puts
     end
 
-    def LoadUserData
+    def loadUserData
         puts "What is your name? "
         user_name = gets.chomp
         @user = User.new(user_name)
@@ -36,27 +40,28 @@ class Program
         end
     end
 
-    def Menu
+    def menu
         
         puts "What is you goal?"
         puts
 
-        menu = Menu.new()
         puts "Choose from menu, please write a number"
-        menu.items.each_with_index do |item, index|
+        @menu.items.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
         end
         user_info = []
-        menu_item_input = gets.chomp.to_i
-        while (menu.select(menu_item_input) == "")
+        menu_item_input = gets.chomp
+        while (@menu.select(menu_item_input) == "")
             puts "Ops! Wrong answer try again."
-            menu_item_input = gets.chomp.to_i
+            menu_item_input = gets.chomp
         end
-        puts "You choose #{menu.selected}"
-        # order.push(menu[menu_item-1])
+        puts "You choose #{@menu.selected}"
+        puts
+
+        @menu.selected
     end
 
-    def Store_goal
+    def store_goal
         puts "Let's create your body profile!"
         puts
         puts "Please write your goal weight"
@@ -66,46 +71,78 @@ class Program
         puts
     end
 
-    def Calculation
+    def calculation
         calculator = CaloriesCalculator.new(@user)
         calories = calculator.calculateCalories(@weight)
         puts "To lose weight, your daily calories needs are #{calories}!"
         puts
+    end
+
+    def choose_Menu
         puts "Would like some menu ideas?"
-        puts
-        menu = Menu.new()
-        puts "Choose from menu, please write a number (1 or 2)"
-        puts
-        menu.options.each_with_index do |item, index|
+        @menu.options.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
         end
-    end
-
-    def Choose_Menu
-        menu = Menu.new()
-        puts "Please, choose one menu (non-vegan or vegan)"
-        puts
-        menu.get_menu.each_with_index do |item, index|
-            puts "#{index + 1} - #{item}"
+        answer_menu_input = gets.chomp
+        while (answer_menu_input != "1" && answer_menu_input != "2")
+            puts "Ops! Wrong answer try again."
+            answer_menu_input = gets.chomp
         end
+
+        if answer_menu_input == "1"
+            puts ""
+            puts "Please, choose one menu:"
+            @menu.get_menu.each_with_index do |item, index|
+                puts "#{index + 1} - #{item}"
+            end
+
+
+            get_menu_input = gets.chomp
+            while (get_menu_input != "1" && get_menu_input != "2")
+                puts "Ops! Wrong answer try again."
+                get_menu_input = gets.chomp
+            end
+
+            if (get_menu_input == "1")
+                @menu.nonveganMenu
+            else
+                @menu.veganMenu
+            end
+        end
+        puts 
     end
 
-    def Get_fit
+    def get_fit
         puts "Would like some tips suggestion?"
         puts
-        menu.get_fit.each_with_index do |item, index|
+        @menu.get_fit.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
         end
+        answer_get_fit_input = gets.chomp
+        while (answer_get_fit_input != "1" && answer_get_fit_input != "2")
+            puts "Ops! Wrong answer try again."
+            answer_get_fit_input = gets.chomp
+        end
+
+        puts 
+        if (answer_get_fit_input == "1")
+            @menu.healthyTips
+        end
+    end
+
+    def thanks
+        puts "Thanks for using the app"
     end
 end      
     
 main = Program.new()
-main.Welcome
-main.LoadUserData
-main.Menu
-main.Store_goal
-main.Calculation
-main.Choose_Menu
-main.Get_fit
-
-#main.quit 
+main.welcome
+main.loadUserData
+if main.menu == "Lose Weight"
+    main.store_goal
+    main.calculation
+    main.choose_Menu
+else 
+    main.get_fit
+end
+main.thanks
