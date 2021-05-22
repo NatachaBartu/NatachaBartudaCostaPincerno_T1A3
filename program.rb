@@ -1,7 +1,7 @@
 require_relative 'user.rb'
 require_relative 'menu.rb'
 require_relative 'calories_calculator.rb'
-
+require 'colorize'
 
 # require_relative '../calculate_calories.rb'
 # require_relative '../quit_program.rb'
@@ -19,93 +19,130 @@ require_relative 'calories_calculator.rb'
 
 class Program
 
-    def Welcome
-        puts "Welcome to Get track on Diet!"
+    def initialize()
+        @menu = Menu.new
+    end
+
+    def welcome
+        puts "Welcome to Get track on Diet!".colorize(:purple)
         puts
     end
 
-    def LoadUserData
-        puts "What is your name? "
+    def loadUserData
+        puts "What is your name? ".colorize(:light_blue)
         user_name = gets.chomp
         @user = User.new(user_name)
-        puts "What you gender? (Male, Female)"
+        puts "What you gender? (Male, Female)".colorize(:light_blue)
         user_gender = gets.chomp
         while (@user.setGender(user_gender) == "")
-            puts "Ops! Wrong answer try again. (Male, Female)"
+            puts "Ops! Wrong answer try again. (Male, Female)".colorize(:red)
             user_gender = gets.chomp
         end
     end
 
-    def Menu
+    def menu
         
-        puts "What is you goal?"
+        puts "What is you goal?".colorize(:light_blue)
         puts
 
-        menu = Menu.new()
-        puts "Choose from menu, please write a number"
-        menu.items.each_with_index do |item, index|
+        puts "Choose from menu, please write a number".colorize(:light_blue)
+        @menu.items.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
         end
         user_info = []
-        menu_item_input = gets.chomp.to_i
-        while (menu.select(menu_item_input) == "")
-            puts "Ops! Wrong answer try again."
-            menu_item_input = gets.chomp.to_i
+        menu_item_input = gets.chomp
+        while (@menu.select(menu_item_input) == "")
+            puts "Ops! Wrong answer try again.".colorize(:red)
+            menu_item_input = gets.chomp
         end
-        puts "You choose #{menu.selected}"
-        # order.push(menu[menu_item-1])
+        puts "You choose #{@menu.selected}".colorize(:light_blue)
+        puts
+
+        @menu.selected
     end
 
-    def Store_goal
-        puts "Let's create your body profile!"
+    def store_goal
+        puts "Let's create your body profile!".colorize(:light_blue)
         puts
-        puts "Please write your goal weight"
+        puts "Please write your goal weight".colorize(:light_blue)
         @weight = gets.chomp.to_i
         puts 
-        puts "Thank you for the information!" 
+        puts "Thank you for the information!".colorize(:light_blue) 
         puts
     end
 
-    def Calculation
+    def calculation
         calculator = CaloriesCalculator.new(@user)
         calories = calculator.calculateCalories(@weight)
-        puts "To lose weight, your daily calories needs are #{calories}!"
+        puts "To lose weight, your daily calories needs are #{calories}!".colorize(:red)
         puts
-        puts "Would like some menu ideas?"
-        puts
-        menu = Menu.new()
-        puts "Choose from menu, please write a number (1 or 2)"
-        puts
-        menu.options.each_with_index do |item, index|
+    end
+
+    def choose_Menu
+        puts "Would like some menu ideas?".colorize(:light_blue) 
+        @menu.options.each_with_index do |item, index|
             puts "#{index + 1} - #{item}"
+        end
+        answer_menu_input = gets.chomp
+        while (answer_menu_input != "1" && answer_menu_input != "2")
+            puts "Ops! Wrong answer try again.".colorize(:light_blue) 
+            answer_menu_input = gets.chomp
+        end
+
+        if answer_menu_input == "1"
+            puts ""
+            puts "Please, choose one menu:".colorize(:light_blue) 
+            @menu.get_menu.each_with_index do |item, index|
+                puts "#{index + 1} - #{item}"
+            end
+
+
+            get_menu_input = gets.chomp
+            while (get_menu_input != "1" && get_menu_input != "2")
+                puts "Ops! Wrong answer try again.".colorize(:red)
+                get_menu_input = gets.chomp
+            end
+
+            if (get_menu_input == "1")
+                @meonveganMenu
+            else
+                @menu.veganMenu
+            end
+        end
+        puts 
+    end
+
+    def get_fit
+        puts "Would like some tips suggestion?".colorize(:light_blue) 
+        puts
+        @menu.get_fit.each_with_index do |item, index|
+            puts "#{index + 1} - #{item}"
+        end
+        answer_get_fit_input = gets.chomp
+        while (answer_get_fit_input != "1" && answer_get_fit_input != "2")
+            puts "Ops! Wrong answer try again.".colorize(:red) 
+            answer_get_fit_input = gets.chomp
+        end
+
+        puts 
+        if (answer_get_fit_input == "1")
+            @menu.healthyTips
         end
     end
 
-    def Choose_Menu
-        menu = Menu.new()
-        puts "Please, choose one menu (non-vegan or vegan)"
-        puts
-        menu.get_menu.each_with_index do |item, index|
-            puts "#{index + 1} - #{item}"
-        end
-    end
-
-    def Get_fit
-        puts "Would like some tips suggestion?"
-        puts
-        menu.get_fit.each_with_index do |item, index|
-            puts "#{index + 1} - #{item}"
-        end
+    def thanks
+        puts "Thanks for using the app".colorize(:light_blue) 
     end
 end      
     
 main = Program.new()
-main.Welcome
-main.LoadUserData
-main.Menu
-main.Store_goal
-main.Calculation
-main.Choose_Menu
-main.Get_fit
-
-#main.quit 
+main.welcome
+main.loadUserData
+if main.menu == "Lose Weight"
+    main.store_goal
+    main.calculation
+    main.choose_Menu
+else 
+    main.get_fit
+end
+main.thanks
