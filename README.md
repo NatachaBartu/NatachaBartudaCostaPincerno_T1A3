@@ -3,7 +3,6 @@
 ## Links
 1. You can visit the search website for more information about Diet [DiabeteStrong](https://diabetesstrong.com/how-to-find-your-daily-calorie-need/)
 1. My github [repo](https://github.com/NatachaBartu/NatachaBartudaCostaPincerno_T1A3/new/main?readme=1)
-
 ## Purpose
 
 For lose weight any good fitness plan is getting your diet right, and to do that, the first thing you need to do is to determine what your daily calorie needs are.
@@ -14,6 +13,9 @@ There are a lot of different online calculators on the web but my app have a dif
 
 ### 1. describe and functionality 
 The app will run at the terminal.
+
+
+
 ### first option
 - will print a welcome message
 - ask name and gender from user and store the information
@@ -59,17 +61,35 @@ Instances variables was the key to build the app, but was essencial to organise 
 
 ## Outline 
 
-The application is very simple to use as you open the app the user going to have a question already and is simple to follow along and answer the questions and choose the desire path.
+The application is very simple to use, as you open the app the user going to have a question already and is simple to follow along and answer the questions and choose the desire path.
 
-On the pictures bellow I've written classes, data structure pseudocode, wireframe to help me to build and understand and organise myself and how every feature it will corresponde on the code.
+## Diagram
 
+## Ruby app diagram
+![diagram](screenshot_process/notion/ruby_app Diagram.pdf)
+
+## Implementation plan
+
+The app was build on the following tool bellow.
+On the pictures bellow I've written classes, data structure, pseudocode and wireframe to help me to build, understand and organise myself and how every feature it will corresponde on the code.
+
+
+
+1. trello
+
+
+2. notion
 ## Classes
-![classes](.vscode/screenshots_app/screenshot process/notion/Classes-ruby_app.pdf)
+![classes](screenshots_app/screenshot_process/notion/Classes-ruby_app.pdf)
 ## Data Structure
-![data_structure](.vscode/screenshots_app/screenshot process/notion/Data_Structure-ruby_app.pdf) 
+![data_structure](screenshot_process/notion/Data_Structure-ruby_app.pdf) 
 ## Pseudocode 
-![pseudocode](.vscode/screenshots_app/screenshot process/notion/Pseudocode.pdf)
+![pseudocode](screenshot_process/notion/Pseudocode.pdf)
 
 ## Wireframe
-![wireframe](.vscode/screenshots_app/screenshot process/notion/wireframe.pdf)
+![wireframe](screenshot_process/notion/wireframe.pdf)
+
+3. manual testing
+
+![manual_testing](screenshot_process/notion/manual_testing_-_Ruby_app.pdf)
 
