@@ -14,8 +14,9 @@ There are a lot of different online calculators on the web but my app have a dif
 
 ### 1. describe and functionality 
 
+1. The app was created to show how many calories do you need to consume daily for healthy diet routine. The app calculate the weight desire to the calories need accordingly to weight input.
 1. The application is easy to run, you can open the app at the terminal. 
-And 
+ 
 1. Only one user can use at the time.
 
 
@@ -126,8 +127,8 @@ I selected just a few screenshots from the testing, if would like to see more fr
 ## Design
 
 1. The application is easy to run, you can open the app at the terminal. 
-2. Only one user can use at the time.
-3. The only dependency require on the app to run the program is: 
+1. Only one user can use at the time.
+1. The only dependency require on the app to run the program is: 
 
 - gem "rspec", "~> 3.10"
 
