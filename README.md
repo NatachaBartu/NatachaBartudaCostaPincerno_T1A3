@@ -2,7 +2,8 @@
 
 ## Links
 1. You can visit the search website for more information about Diet [DiabeteStrong](https://diabetesstrong.com/how-to-find-your-daily-calorie-need/)
-1. My github [repo](https://github.com/NatachaBartu/NatachaBartudaCostaPincerno_T1A3/new/main?readme=1)
+1. My github [repo](https://github.com/NatachaBartu/NatachaBartudaCostaPincerno_T1A3)
+1. My notion workbook [notion](https://www.notion.so/Ruby-app-Get-track-on-Diet-824ce6deb460403bafb2026b6ff53199)
 ## Purpose
 
 For lose weight any good fitness plan is getting your diet right, and to do that, the first thing you need to do is to determine what your daily calorie needs are.
@@ -66,30 +67,59 @@ The application is very simple to use, as you open the app the user going to hav
 ## Diagram
 
 ## Ruby app diagram
-![diagram](screenshot_process/notion/ruby_app Diagram.pdf)
+![diagram](screenshot_process/notion/notion_png/diagram.png)
 
 ## Implementation plan
 
 The app was build on the following tool bellow.
 On the pictures bellow I've written classes, data structure, pseudocode and wireframe to help me to build, understand and organise myself and how every feature it will corresponde on the code.
 
-
-
 1. trello
 
+The trello board was essential guide through the build process of development the application.
+
+I selected just a few screenshots from my trello board, if would like to see more from this process you can access to all the images on the deliveries folder. 
+
+![trello](screenshot_process/Trello/18:05/ScreenShot_2021-05-18_at_9.53.10am.png)
+![trello](screenshot_process/Trello/19:05/ScreenShot_2021-05-19_at_4.38.09pm.png)
+![trello](screenshot_process/Trello/20:05/ScreenShot_2021-05-20_at_8.34.20am.png)
+![trello](screenshot_process/Trello/21:05/ScreenShot_2021-05-21_at_3.15.54pm.png)
+![trello](screenshot_process/Trello/22:05/ScreenShot_2021-05-22_at_3.21.09pm.png)
 
 2. notion
+
+Using the notion during the process of the development the application was quite fun! I could organise myself and follow along as I was building the process of my app. Organisation was the "key" to get my work done. 
+
+I selected just a few screenshots from my notion workbook , if would like to see more from this process you can access to all the pdf on the links. 
+
+On the images above you can have an examples of my working from notion.
 ## Classes
-![classes](screenshots_app/screenshot_process/notion/Classes-ruby_app.pdf)
+![classes](screenshot_process/notion/notion_png/classes.png)
 ## Data Structure
-![data_structure](screenshot_process/notion/Data_Structure-ruby_app.pdf) 
+![data_structure](screenshot_process/notion/notion_png/data_structure.png) 
 ## Pseudocode 
-![pseudocode](screenshot_process/notion/Pseudocode.pdf)
+![pseudocode](screenshot_process/notion/notion_png/pseudocode.png)
 
 ## Wireframe
-![wireframe](screenshot_process/notion/wireframe.pdf)
+![wireframe](screenshot_process/notion/notion_png/wireframe.png)
 
 3. manual testing
 
-![manual_testing](screenshot_process/notion/manual_testing_-_Ruby_app.pdf)
+The development of the app was done with both type of testing, the automatic and manual.
+
+On the images above you can have an examples of my working from testing development.
+
+I selected just a few screenshots from the testing, if would like to see more from this process you can access to all the images on the deliveries folder. 
+
+![manual_testing](screenshot_process/notion/notion_png/manual_testing.png)
+
+![automatic](screenshot_process/errors_screenshots/20:05/automatic/ScreenShot_2021-05-20_at_1.35.13pm.png)
+
+![automatic](screenshot_process/errors_screenshots/21:05/automatic/ScreenShot_2021-05-21_at_2.27.54pm.png)
+
+![manual](screenshot_process/errors_screenshots/21:05/manual/ScreenShot_2021-05-21_at_1.35.56pm.png)
+
+![manual](screenshot_process/errors_screenshots/21:05/manual/ScreenShot_2021-05-21_at_12.29.57pm.png)
+
+## Developer Tools
 
