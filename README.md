@@ -13,8 +13,10 @@ Physical activity, such as walking, is important for weight control because it h
 There are a lot of different online calculators on the web but my app have a differential which can calculate the goal weight and result in calories need in day and also have a suggestion menu on it.
 
 ### 1. describe and functionality 
-The app will run at the terminal.
 
+1. The application is easy to run, you can open the app at the terminal. 
+And 
+1. Only one user can use at the time.
 
 
 ### first option
@@ -121,5 +123,13 @@ I selected just a few screenshots from the testing, if would like to see more fr
 
 ![manual](screenshot_process/errors_screenshots/21:05/manual/ScreenShot_2021-05-21_at_12.29.57pm.png)
 
-## Developer Tools
+## Design
+
+1. The application is easy to run, you can open the app at the terminal. 
+2. Only one user can use at the time.
+3. The only dependency require on the app to run the program is: 
+
+- gem "rspec", "~> 3.10"
+
+- gem "colorize", "~> 0.8.1"
 
