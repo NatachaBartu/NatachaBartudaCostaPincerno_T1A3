@@ -14,8 +14,9 @@ There are a lot of different online calculators on the web but my app have a dif
 
 ### 1. describe and functionality 
 
+1. The app was created to show how many calories do you need to consume daily for healthy diet routine. The app calculate the weight desire to the calories need accordingly to weight input.
 1. The application is easy to run, you can open the app at the terminal. 
-And 
+ 
 1. Only one user can use at the time.
 
 
