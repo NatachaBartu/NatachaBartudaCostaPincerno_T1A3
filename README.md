@@ -127,8 +127,8 @@ I selected just a few screenshots from the testing, if would like to see more fr
 ## Design
 
 1. The application is easy to run, you can open the app at the terminal. 
-2. Only one user can use at the time.
-3. The only dependency require on the app to run the program is: 
+1. Only one user can use at the time.
+1. The only dependency require on the app to run the program is: 
 
 - gem "rspec", "~> 3.10"
 
