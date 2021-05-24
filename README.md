@@ -8,18 +8,18 @@
 
 For lose weight any good fitness plan is getting your diet right, and to do that, the first thing you need to do is to determine what your daily calorie needs are.
 
-Physical activity, such as walking, is important for weight control because it helps you burn calories, on this basis on that I got inspired to build an ruby app to show how many calories you need to reach the goal. 
+Physical activity, such as walking, is important for weight control because it helps you burn calories, on this basis on that I got inspired to build a ruby app to show how many calories you need to reach the goal. 
 
 There are a lot of different online calculators on the web but my app have a differential which can calculate the goal weight and result in calories need in day and also have a suggestion menu on it.
 
-### 1. describe and functionality 
+###  Describe and Functionality 
 
-1. The application is easy to run, you can open the app at the terminal. 
-And 
+1. The application will run at the terminal. 
 1. Only one user can use at the time.
+1. The program very simple to use, as you open the app at the terminal, the user going to have a question already and is simple to follow along and answer the questions and choose the desire path.
 
 
-### first option
+### Lose Weight path
 - will print a welcome message
 - ask name and gender from user and store the information
 - ask user "what is your goal" and give a 2 suggestion (get fit or lose weight)
@@ -31,8 +31,8 @@ And
 - the program will print a thank you message for the info and print the result calories.
 - the program will print a question if the user would like some menu suggestion.
 - if yes will ask again what type would like to choose. (non-vegan or vegan) and print menu.
-
-### second option
+- quit the program with the thank you message.
+### get fit path
 
 - will print a welcome message
 - ask name and gender from user and store the information
@@ -40,27 +40,56 @@ And
 - define this information as a number so the user can choose menu ( 1. get fit or 2 . lose weight )
 - if user choose Get fit program it will print a question: "Would like some tips suggestion?" and a menu selection.
 - if user write yes  the program will print a  list of tips.
-- and a thank you message for using app. 
+- quit the program with the thank you message. 
 
 ## Feature
 
 I used many diferent features to build my app but I will list three of them:
 
-1. Class and method 
+## 1. Calories Calculator
 
-A class and method was used to identify and organised the structure the of the code.
+- On this feature I used a 'class CaloriesCalculator' to start and a initialize method 'user', to save the API key into an instance variable.
+- Following that the next method was used to define a logic math to calculate the calories.
+- Using the if statement to compare gender to user's gender if the statement is true the program run a specific math for it.
+else use the other math on the code.
+- the return result I had to use a specific syntax for the round number. 
+ 
+### Algorithmic Logic
+**Step 1:** Find your body weight in kilograms (if you live in the US, just divide your weight in pounds by 2.2 to get your weight in kilograms).
 
-On the structure on every file you will find a specific class for it. 
+**Step 2:** Multiply your weight in kilograms by 0.9 if you are a woman or 1.0 if you are a man.
 
-2. Loop and Statement condition
+**Step 3:** Multiply by 24
 
-Loop was used to make the app more flow. 
+**Step 4:** Multiply by your “Lean Factor” which categorised by body fat, men and woman have diferent 'Lean Factor' (woman 1.0 and men 0.9)
+### syntax: Example using my stats: 61 kg (134.5 lbs.) x 0.9 (female) x 24 x 0.95 (20% body fat) = 1252
 
-The statement condition was essencial because on the application have lots of input from the user.
 
-3. Variables
+## 2. Using txt file into code
 
-Instances variables was the key to build the app, but was essencial to organise and reuse on the code.
+- Using txt files it was great to not get long text direct into the code and get messy, especially because I create 3 types of differents content inside of them.  
+- On the file 'menu.rb' there is a 'class Menu' that allowed to use lots of methods inside to get the code organised.  
+- On the 'veganMenu', 'nonVeganMenu' and 'healthyTips' methods it was used the same structure to display and connect the menu on the API.
+- Using same the syntax I could connect the file and display it on terminal. 
+- The syntax used on my API was quite simple and straightforward.
+- Also connect the txt on the main file as well.
+
+### syntax: File.open(example.txt, "r") do |file|
+                puts file.read()
+
+
+## 3. Define a Gender Method
+
+- I need that feature to define which user was using the application.
+- On basis of that I could set the correct path for the Algorithmic Logic, this was essencial to define on my API.
+- First set the method to organise and separated de feature it was used, in this case I choose 'loadUserData' (name of my method).
+- Using 'puts' to display the information for user "What your gender? (Male, Female)" 
+- And store the information with 'gets.chomp' could set which path the user chose. (Female or Male).
+- On this feature I chose to set a loop for the possibilities that user could choose and also the errors that could appear.
+- 'while and end' or loop, guide the user try again in case of spelling or unacceptable answer and also I used colorize on color red to display the information and get the attention from the user, to repete the process.
+- also I need to set one specific file for that session, I used 'user.rb' file to get a bit 'DRY' on my code.
+- Class was used and a method call 'setGender' was include to this file to define what 'type' was the user, also I add a value '(value)' to my class.
+- if statement helped to guide the information and define which action it was going to happen to next step.
 
 ## Outline 
 

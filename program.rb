@@ -28,7 +28,7 @@ class Program
         puts "What is your name? ".colorize(:light_blue)
         user_name = gets.chomp
         @user = User.new(user_name)
-        puts "What you gender? (Male, Female)".colorize(:light_blue)
+        puts "What your gender? (Male, Female)".colorize(:light_blue)
         user_gender = gets.chomp
         while (@user.setGender(user_gender) == "")
             puts "Ops! Wrong answer try again. (Male, Female)".colorize(:red)
