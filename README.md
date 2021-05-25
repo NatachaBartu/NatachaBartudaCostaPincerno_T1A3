@@ -50,30 +50,30 @@ I used many diferent features to build my app but I will list three of them:
 
 ## 1. Calories Calculator
 
-- On this feature I used a 'class CaloriesCalculator' to start and a initialize method 'user', to save the API key into an instance variable.
+- On this feature, I used a 'class CaloriesCalculator' to start and a initialize method 'user', to use de information later as instances variables.
 - Following that the next method was used to define a logic math to calculate the calories.
 - Using the if statement to compare gender to user's gender if the statement is true the program run a specific math for it.
 else use the other math on the code.
 - the return result I had to use a specific syntax for the round number. 
  
 ### Algorithmic Logic
-**Step 1:** Find your body weight in kilograms (if you live in the US, just divide your weight in pounds by 2.2 to get your weight in kilograms).
+**Step 1:** Find your body weight in kilograms.
 
 **Step 2:** Multiply your weight in kilograms by 0.9 if you are a woman or 1.0 if you are a man.
 
 **Step 3:** Multiply by 24
 
 **Step 4:** Multiply by your “Lean Factor” which categorised by body fat, men and woman have diferent 'Lean Factor' (woman 1.0 and men 0.9)
-### syntax: Example using my stats: 61 kg (134.5 lbs.) x 0.9 (female) x 24 x 0.95 (20% body fat) = 1252
+### syntax: Example using my stats: 61 kg x 0.9 (female) x 24 x 0.90 (body fat) = 1252
 
 
 ## 2. Using txt file into code
 
-- Using txt files it was great to not get long text direct into the code and get messy, especially because I create 3 types of differents content inside of them.  
+- Using txt files it was great to not get long text direct into the code and get messy, especially because I create 3 types of txt files.  
 - On the file 'menu.rb' there is a 'class Menu' that allowed to use lots of methods inside to get the code organised.  
-- On the 'veganMenu', 'nonVeganMenu' and 'healthyTips' methods it was used the same structure to display and connect the menu on the API.
+- On the 'veganMenu', 'nonVeganMenu' and 'healthyTips' methods it was used the same structure to display and connect the menu on the code.
 - Using same the syntax I could connect the file and display it on terminal. 
-- The syntax used on my API was quite simple and straightforward.
+- The syntax used on the code was quite simple and straightforward.
 - Also connect the txt on the main file as well.
 
 ### syntax: File.open(example.txt, "r") do |file|
@@ -83,7 +83,7 @@ else use the other math on the code.
 ## 3. Define a Gender Method
 
 - I need that feature to define which user was using the application.
-- On basis of that I could set the correct path for the Algorithmic Logic, this was essencial to define on my API.
+- On basis of that I could set the correct path for the Algorithmic Logic, this was essencial to define to my app.
 - First set the method to organise and separated de feature it was used, in this case I choose 'loadUserData' (name of my method).
 - Using 'puts' to display the information for user "What your gender? (Male, Female)" 
 - And store the information with 'gets.chomp' could set which path the user chose. (Female or Male).
