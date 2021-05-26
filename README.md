@@ -80,9 +80,10 @@ else use the other math on the code.
 - The syntax used on the code was quite simple and straightforward.
 - Also connect the txt on the main file as well.
 
-### syntax: File.open(example.txt, "r") do |file|
-                puts file.read()
-
+```ruby
+    File.open(example.txt, "r") do |file|
+    puts file.read()
+```
 
 ## 3. Define a Gender Method
 
@@ -104,7 +105,7 @@ The application is very simple to use, as you open the app the user going to hav
 ## Diagram
 
 ## Ruby app diagram
-![diagram](screenshot_process/notion/notion_png/diagram.png)
+![diagram](docs/screenshot_process/notion/notion_png/diagram.png)
 
 ## Implementation plan
 
@@ -115,13 +116,13 @@ On the pictures bellow I've written classes, data structure, pseudocode and wire
 
 The trello board was essential guide through the build process of development the application.
 
-I selected just a few screenshots from my trello board, if would like to see more from this process you can access to all the images on the deliveries folder. 
+I selected just a few screenshots from my trello board, if would like to see more from this process you can access to all the images on the deliveries folder.
 
-![trello](screenshot_process/Trello/18:05/ScreenShot_2021-05-18_at_9.53.10am.png)
-![trello](screenshot_process/Trello/19:05/ScreenShot_2021-05-19_at_4.38.09pm.png)
-![trello](screenshot_process/Trello/20:05/ScreenShot_2021-05-20_at_8.34.20am.png)
-![trello](screenshot_process/Trello/21:05/ScreenShot_2021-05-21_at_3.15.54pm.png)
-![trello](screenshot_process/Trello/22:05/ScreenShot_2021-05-22_at_3.21.09pm.png)
+![trello](docs/screenshot_process/Trello/18:05/ScreenShot_2021-05-18_at_9.53.10am.png)
+![trello](docs/screenshot_process/Trello/19:05/ScreenShot_2021-05-19_at_4.38.09pm.png)
+![trello](docs/screenshot_process/Trello/20:05/ScreenShot_2021-05-20_at_8.34.20am.png)
+![trello](docs/screenshot_process/Trello/21:05/ScreenShot_2021-05-21_at_3.15.54pm.png)
+![trello](docs/screenshot_process/Trello/22:05/ScreenShot_2021-05-22_at_3.21.09pm.png)
 
 2. notion
 
@@ -131,14 +132,14 @@ I selected just a few screenshots from my notion workbook , if would like to see
 
 On the images above you can have an examples of my working from notion.
 ## Classes
-![classes](screenshot_process/notion/notion_png/classes.png)
+![classes](docs/screenshot_process/notion/notion_png/classes.png)
 ## Data Structure
-![data_structure](screenshot_process/notion/notion_png/data_structure.png) 
+![data_structure](docs/screenshot_process/notion/notion_png/data_structure.png) 
 ## Pseudocode 
-![pseudocode](screenshot_process/notion/notion_png/pseudocode.png)
+![pseudocode](docs/screenshot_process/notion/notion_png/pseudocode.png)
 
 ## Wireframe
-![wireframe](screenshot_process/notion/notion_png/wireframe.png)
+![wireframe](docs/screenshot_process/notion/notion_png/wireframe.png)
 
 3. manual testing
 
@@ -150,15 +151,15 @@ I selected just a few screenshots from the testing, if would like to see more fr
 
 On loops was created a possibility avoid of error expliciting a message display as: "Ops! Wrong answer try again." and also display in red in colorized to get an atention from the user.
 
-![manual_testing](screenshot_process/notion/notion_png/manual_testing.png)
+![manual_testing](docs/screenshot_process/notion/notion_png/manual_testing.png)
 
-![automatic](screenshot_process/errors_screenshots/20:05/automatic/ScreenShot_2021-05-20_at_1.35.13pm.png)
+![automatic](docs/screenshot_process/errors_screenshots/20:05/automatic/ScreenShot_2021-05-20_at_1.35.13pm.png)
 
-![automatic](screenshot_process/errors_screenshots/21:05/automatic/ScreenShot_2021-05-21_at_2.27.54pm.png)
+![automatic](docs/screenshot_process/errors_screenshots/21:05/automatic/ScreenShot_2021-05-21_at_2.27.54pm.png)
 
-![manual](screenshot_process/errors_screenshots/21:05/manual/ScreenShot_2021-05-21_at_1.35.56pm.png)
+![manual](docs/screenshot_process/errors_screenshots/21:05/manual/ScreenShot_2021-05-21_at_1.35.56pm.png)
 
-![manual](screenshot_process/errors_screenshots/21:05/manual/ScreenShot_2021-05-21_at_12.29.57pm.png)
+![manual](docs/screenshot_process/errors_screenshots/21:05/manual/ScreenShot_2021-05-21_at_12.29.57pm.png)
 
 ## Design
 
@@ -170,3 +171,8 @@ On loops was created a possibility avoid of error expliciting a message display 
 
 - gem "colorize", "~> 0.8.1"
 
+- gem "tty-pager", "~> 0.14.0"
+
+- gem "tty-box", "~> 0.7.0"
+
+- gem "tty-font", "~> 0.5.0"
