@@ -176,4 +176,3 @@ On loops was created a possibility avoid of error expliciting a message display 
 - gem "tty-box", "~> 0.7.0"
 
 - gem "tty-font", "~> 0.5.0"
-
