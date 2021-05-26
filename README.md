@@ -19,7 +19,11 @@ There are a lot of different online calculators on the web but my app have a dif
  
 1. Only one user can use at the time.
 1. The program very simple to use, as you open the app at the terminal, the user going to have a question already and is simple to follow along and answer the questions and choose the desire path.
-
+1. The code source start on 'program.rb' file. 
+1. On loops was created a possibility avoid of error expliciting a message display as: "Ops! Wrong answer try again." and also display in red in colorized to get an atention from the user.
+1. Together with the documentation I created a folder 'screenshot_process' and inside of this folder there is another folder 'errors_screenshots' which contains handling errors like manual or automatic.
+1. Instances variable was used during the code to access the information in different part of the code.
+1. Loops, conditional statement and case statement was used on the code because of the input from the user, we need to manage which path the user can choose. 
 
 ### Lose Weight path
 - will print a welcome message
@@ -143,6 +147,8 @@ The development of the app was done with both type of testing, the automatic and
 On the images above you can have an examples of my working from testing development.
 
 I selected just a few screenshots from the testing, if would like to see more from this process you can access to all the images on the deliveries folder. 
+
+On loops was created a possibility avoid of error expliciting a message display as: "Ops! Wrong answer try again." and also display in red in colorized to get an atention from the user.
 
 ![manual_testing](screenshot_process/notion/notion_png/manual_testing.png)
 
