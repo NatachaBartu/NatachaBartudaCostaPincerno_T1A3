@@ -45,4 +45,5 @@ class Menu
             puts file.read()
         end
     end
+
 end

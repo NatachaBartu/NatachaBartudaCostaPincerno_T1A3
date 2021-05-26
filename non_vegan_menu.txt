@@ -1,128 +1,128 @@
-Weight loss Menu
+Wᴇɪɢʜᴛ ʟᴏss Mᴇɴᴜ
 
-## normal menu ##
+## non-vegan ᴍᴇɴᴜ ##
 
-day 1
+ᴅᴀʏ 1
 
-breakfast
-* 1 toast
-* peanut butter
-* 1 cup of coffee
-* grapefruit
+ʙʀᴇᴀᴋғᴀsᴛ
+* 1 ᴛᴏᴀsᴛ
+* ᴘᴇᴀɴᴜᴛ ʙᴜᴛᴛᴇʀ
+* 1 ᴄᴜᴘ ᴏғ ᴄᴏғғᴇᴇ
+* ɢʀᴀᴘᴇғʀᴜɪᴛ
 
-snack
-* honey smoothie
+sɴᴀᴄᴋ
+* ʜᴏɴᴇʏ sᴍᴏᴏᴛʜɪᴇ
 
-lunch
-* 1 toast
-* half tuna portion
-* 1 cup of tea
+ʟᴜɴᴄʜ
+* 1 ᴛᴏᴀsᴛ
+* ʜᴀʟғ ᴛᴜɴᴀ ᴘᴏʀᴛɪᴏɴ
+* 1 ᴄᴜᴘ ᴏғ ᴛᴇᴀ
 
-dinner
-* 4oz of tuna
-* 1 cup of beans 
-* 1 small apple
-
----
-
-day 2
-
-breakfast
-* 1 toast
-* 1 chicken egg
-* half banana
-
-snack
-* hummus and crispy bread
-
-lunch
-* 3 slices of cheese
-* 3 crackers
-
-dinner
-* broccoli
-* half carrot
-* 1 cup of greek yoghurt
+ᴅɪɴɴᴇʀ
+* 4ᴏᴢ ᴏғ ᴛᴜɴᴀ
+* 1 ᴄᴜᴘ ᴏғ ʙᴇᴀɴs 
+* 1 sᴍᴀʟʟ ᴀᴘᴘʟᴇ
 
 ---
 
-day 3
+ᴅᴀʏ 2
 
-breakfast
-* summer yoghurt
+ʙʀᴇᴀᴋғᴀsᴛ
+* 1 ᴛᴏᴀsᴛ
+* 1 ᴄʜɪᴄᴋᴇɴ ᴇɢɢ
+* ʜᴀʟғ ʙᴀɴᴀɴᴀ
 
-snack
-* hummus with tomatoes
+sɴᴀᴄᴋ
+* ʜᴜᴍᴍᴜs ᴀɴᴅ ᴄʀɪsᴘʏ ʙʀᴇᴀᴅ
 
-lunch
-* Turkey salad in garlic sauce
+ʟᴜɴᴄʜ
+* 3 sʟɪᴄᴇs ᴏғ ᴄʜᴇᴇsᴇ
+* 3 ᴄʀᴀᴄᴋᴇʀs
 
-dinner
-* Veal with veggie sauce
-
----
-
-day 4
-
-breakfast
-* Yoghurt with nuts
-
-snack
-*Green smoothie
-
-lunch
-* Spaghetti with vegetables
-
-dinner
-* Turkey steak in creamy sauce with vegatables
+ᴅɪɴɴᴇʀ
+* ʙʀᴏᴄᴄᴏʟɪ
+* ʜᴀʟғ ᴄᴀʀʀᴏᴛ
+* 1 ᴄᴜᴘ ᴏғ ɢʀᴇᴇᴋ ʏᴏɢʜᴜʀᴛ
 
 ---
 
-day 5
+ᴅᴀʏ 3
 
-breakfast
-* Oatmeal with yoghurt
+ʙʀᴇᴀᴋғᴀsᴛ
+* sᴜᴍᴍᴇʀ ʏᴏɢʜᴜʀᴛ
 
-snack
-* 1 mango
+sɴᴀᴄᴋ
+* ʜᴜᴍᴍᴜs ᴡɪᴛʜ ᴛᴏᴍᴀᴛᴏᴇs
 
-lunch
-* Grilled steak
+ʟᴜɴᴄʜ
+* Tᴜʀᴋᴇʏ sᴀʟᴀᴅ ɪɴ ɢᴀʀʟɪᴄ sᴀᴜᴄᴇ
 
-dinner
-* Mushroom pasta with veggies
-
----
-
-day 6
-
-breakfast
-* Spanish-style oatmeal
-
-snack
-* Spinach smoothie
-
-lunch
-* Steak with light mushroom sauce
-
-dinner
-* Veal with veggies and sauce
+ᴅɪɴɴᴇʀ
+* Vᴇᴀʟ ᴡɪᴛʜ ᴠᴇɢɢɪᴇ sᴀᴜᴄᴇ
 
 ---
 
-day 7
+ᴅᴀʏ 4
 
-breakfast
-* Oatmeal
-* Berry smoothie
+ʙʀᴇᴀᴋғᴀsᴛ
+* Yᴏɢʜᴜʀᴛ ᴡɪᴛʜ ɴᴜᴛs
 
-snack
-* Hummus with cucumber
+sɴᴀᴄᴋ
+*Gʀᴇᴇɴ sᴍᴏᴏᴛʜɪᴇ
 
-lunch
-* chicken baked with apples
+ʟᴜɴᴄʜ
+* Sᴘᴀɢʜᴇᴛᴛɪ ᴡɪᴛʜ ᴠᴇɢᴇᴛᴀʙʟᴇs
 
-dinner
-* Roast chicken
+ᴅɪɴɴᴇʀ
+* Tᴜʀᴋᴇʏ sᴛᴇᴀᴋ ɪɴ ᴄʀᴇᴀᴍʏ sᴀᴜᴄᴇ ᴡɪᴛʜ ᴠᴇɢᴀᴛᴀʙʟᴇs
+
+---
+
+ᴅᴀʏ 5
+
+ʙʀᴇᴀᴋғᴀsᴛ
+* Oᴀᴛᴍᴇᴀʟ ᴡɪᴛʜ ʏᴏɢʜᴜʀᴛ
+
+sɴᴀᴄᴋ
+* 1 ᴍᴀɴɢᴏ
+
+ʟᴜɴᴄʜ
+* Gʀɪʟʟᴇᴅ sᴛᴇᴀᴋ
+
+ᴅɪɴɴᴇʀ
+* Mᴜsʜʀᴏᴏᴍ ᴘᴀsᴛᴀ ᴡɪᴛʜ ᴠᴇɢɢɪᴇs
+
+---
+
+ᴅᴀʏ 6
+
+ʙʀᴇᴀᴋғᴀsᴛ
+* Sᴘᴀɴɪsʜ-sᴛʏʟᴇ ᴏᴀᴛᴍᴇᴀʟ
+
+sɴᴀᴄᴋ
+* Sᴘɪɴᴀᴄʜ sᴍᴏᴏᴛʜɪᴇ
+
+ʟᴜɴᴄʜ
+* Sᴛᴇᴀᴋ ᴡɪᴛʜ ʟɪɢʜᴛ ᴍᴜsʜʀᴏᴏᴍ sᴀᴜᴄᴇ
+
+ᴅɪɴɴᴇʀ
+* Vᴇᴀʟ ᴡɪᴛʜ ᴠᴇɢɢɪᴇs ᴀɴᴅ sᴀᴜᴄᴇ
+
+---
+
+ᴅᴀʏ 7
+
+ʙʀᴇᴀᴋғᴀsᴛ
+* Oᴀᴛᴍᴇᴀʟ
+* Bᴇʀʀʏ sᴍᴏᴏᴛʜɪᴇ
+
+sɴᴀᴄᴋ
+* Hᴜᴍᴍᴜs ᴡɪᴛʜ ᴄᴜᴄᴜᴍʙᴇʀ
+
+ʟᴜɴᴄʜ
+* ᴄʜɪᴄᴋᴇɴ ʙᴀᴋᴇᴅ ᴡɪᴛʜ ᴀᴘᴘʟᴇs
+
+ᴅɪɴɴᴇʀ
+* Rᴏᴀsᴛ ᴄʜɪᴄᴋᴇɴ
 
 ---

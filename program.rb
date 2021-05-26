@@ -20,14 +20,17 @@ class Program
     end
 
     def welcome
-        puts "Welcome to Get track on Diet!".colorize(:purple)
-        puts
+            File.open("ascii_art", "r") do |file|
+                puts file.read()
+            end
     end
 
     def loadUserData
+        puts 
         puts "What is your name? ".colorize(:light_blue)
         user_name = gets.chomp
         @user = User.new(user_name)
+        puts
         puts "What your gender? (Male, Female)".colorize(:light_blue)
         user_gender = gets.chomp
         while (@user.setGender(user_gender) == "")
@@ -100,7 +103,7 @@ class Program
             end
 
             if (get_menu_input == "1")
-                @meonveganMenu
+                @menu.nonVeganMenu
             else
                 @menu.veganMenu
             end
